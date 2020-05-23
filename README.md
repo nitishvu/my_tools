@@ -10,6 +10,7 @@ also you can add sshkey path to get exact command to ssh
 
 1)start ec2 instance.
 
+
     `python3  ec2_devinstance.py start`
     
 
@@ -20,19 +21,25 @@ also you can add sshkey path to get exact command to ssh
     ssh -i  my_ssh_key ec2-user@52.66.XX.XX
 
 
+
+
 2)stop ec2 instance. 
 
-    `python3  ec2_devinstance.py stop`
+    python3  ec2_devinstance.py stop
 
 
 3)create alisa for these commands in ~/.bashrc so that we dont have type full command
 
-    `alias ec2="python3 /home/nitish/workspace/my_tools/ec2_devinstance.py"`
+    alias ec2="python3 /home/nitish/workspace/my_tools/ec2_devinstance.py"
 
 
 Now you can start or stop you instance with below command
 
+<<<<<<< HEAD
         `ec2 start/stop`
 
 
     
+=======
+        ec2 start/stop
+>>>>>>> 789c653b7fbf5e3f9b375a42a969154b8b593cbd
