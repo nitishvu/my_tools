@@ -6,6 +6,7 @@ scripts i use while working on open source  projects
 
 Make sure you have configured aws using `aws configure`
 fill parameters in ec2_devinstance.conf.
+Try to use [my_ec2_policy](https://github.com/nitishvu/my_tools/blob/master/my_ec2_policy.json) present in this repo to restrict user 
 also you can add sshkey path to get exact command to ssh
 
 1)start ec2 instance.
