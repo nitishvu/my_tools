@@ -65,9 +65,14 @@ if __name__ == '__main__':
     if action == 'start':
         if instance_status=='running':
             print("your instance is already started")
-            exit(0)
+            #exit(0)
         else:
             start_instances(instance)
-    wait_for_action_completion(instance)
-
+            wait_for_action_completion(instance)
+    if action == 'start':
+        response = ec2.describe_instances(InstanceIds=[instance],)
+        print(response['Reservations'][0]['Instances'][0]['PublicIpAddress'])
+        public_ip=response['Reservations'][0]['Instances'][0]['PublicIpAddress']
+        print("connect to ec2 instance with below command")
+        print("ssh -i  my_ssh_key ec2-user@%s"%public_ip)
     

@@ -6,11 +6,19 @@ scripts i use while working on open source  projects
 
 Make sure you have configured aws using `aws configure`
 fill parameters in ec2_devinstance.conf.
-
+also you can add sshkey path to get exact command to ssh
 
 1)start ec2 instance.
 
     `python3  ec2_devinstance.py start`
+    
+
+
+    o/p:
+    52.66.XX.XX
+    connect to ec2 instance with below command
+    ssh -i  my_ssh_key ec2-user@52.66.XX.XX
+
 
 2)stop ec2 instance. 
 
@@ -25,3 +33,6 @@ fill parameters in ec2_devinstance.conf.
 Now you can start or stop you instance with below command
 
         `ec2 start/stop`
+
+
+    
