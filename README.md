@@ -36,11 +36,9 @@ also you can add sshkey path to get exact command to ssh
 
 Now you can start or stop you instance with below command
 
-<<<<<<< HEAD
+
         `ec2 start/stop`
 
 
-    
-=======
-        ec2 start/stop
->>>>>>> 789c653b7fbf5e3f9b375a42a969154b8b593cbd
+
+
