@@ -12,3 +12,11 @@ fill parameters in ec2_devinstance.conf
 
 `python3  ec2_devinstance.py stop`
 
+3)create alisa for these commands in ~/.bashrc so that we dont have type full command
+
+    `alias ec2="python3 /home/nitish/workspace/my_tools/ec2_devinstance.py"`
+
+
+    now you can start or stop you instance with below command
+
+    `ec2 start/stop`
